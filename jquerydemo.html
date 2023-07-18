@@ -1,5 +1,58 @@
 <html>
     <body>
+        <style>
+            $red: #ff4136;
+$green: #2ecc40;
+$blue: #0074d9;
+
+.filter-cat {
+    margin: 1em 0;
+}
+
+.f-cat {
+    color: #fff;
+    padding: 1em;
+    border: 5px solid #fff;
+}
+
+.f-cat[data-cat='cat-red'] {
+    background: $red;
+}
+.f-cat[data-cat='cat-green'] {
+    background: $green;
+}
+.f-cat[data-cat='cat-blue'] {
+    background: $blue;
+}
+.f-cat[data-cat3='cat-upper'] {
+    text-transform: uppercase;
+}
+.f-cat[data-cat3='cat-lower'] {
+    text-transform: lowercase;
+}
+
+.filter-cat-results .f-cat {
+    opacity: 0;
+    display: none;
+    
+    &.active {
+        opacity: 1;
+        display: block;
+	    -webkit-animation: fadeIn 0.65s ease forwards;
+	    animation: fadeIn 0.65s ease forwards;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+        </style>
 <div class="jumbotron">
     <div class="container">
         <h2>jQuery Filtering with Multiple Criteria</h2>
