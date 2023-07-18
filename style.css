@@ -1,4 +1,4 @@
- .filter-cat {
+.filter-cat {
   margin: 1em 0;
 }
 
@@ -8,19 +8,23 @@
   border: 5px solid #fff;
 }
 
-.f-cat[data-cat='cat-red'] {
+.f-cat[data-cat=cat-red] {
   background: #ff4136;
 }
-.f-cat[data-cat='cat-green'] {
+
+.f-cat[data-cat=cat-green] {
   background: #2ecc40;
 }
-.f-cat[data-cat='cat-blue'] {
+
+.f-cat[data-cat=cat-blue] {
   background: #0074d9;
 }
-.f-cat[data-cat3='cat-upper'] {
+
+.f-cat[data-cat3=cat-upper] {
   text-transform: uppercase;
 }
-.f-cat[data-cat3='cat-lower'] {
+
+.f-cat[data-cat3=cat-lower] {
   text-transform: lowercase;
 }
 
@@ -28,7 +32,6 @@
   opacity: 0;
   display: none;
 }
-
 .filter-cat-results .f-cat.active {
   opacity: 1;
   display: block;
@@ -44,7 +47,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
